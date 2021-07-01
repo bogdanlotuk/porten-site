@@ -1,0 +1,124 @@
+.new-season {
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    &__season {
+        width: 54.6%;
+        min-width: 920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        align-self: stretch;
+        padding: 93px 0 80px 0;
+    }
+    &__season-title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 90px;
+    }
+    &__season-title::after {
+        position: absolute;
+        content: "";
+        width: 120px;
+        height: 1px;
+        background-color: #fff;
+        bottom: -42px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__collection {
+        width: 45.4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image:url(../img/new-season__bg.jpg);
+        background-size: cover;
+        align-self: stretch;
+    }
+    &__collection-title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 484px 0 49px 0;
+        position: relative;
+    }
+    &__collection-title::after {
+        position: absolute;
+        content: "";
+        width: 120px;
+        height: 1px;
+        background-color: #fff;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__collection-link {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        padding: 12px 26px;
+        margin-bottom: 84px;
+    }
+    &__collection-link:hover {
+        color: #fff;
+        background-color: #ffffff22;
+    }
+
+    .swiper-container {
+        max-width: 880px;
+    }
+    .swiper-slide {
+        &__top {
+            padding: 55px 22px;
+            background-color: #191B1C;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__bottom-name {
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        &__bottom-price {
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            color: #D0D0D0;
+        }
+    }
+    .card {
+        border: none;
+        background-color: #000;
+    }
+}

@@ -1,0 +1,76 @@
+.new-clocks {
+    &__inner {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 0 135px;
+    }
+    &__title {
+        font-family: 'Playfair sDisplay';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 119px;
+    }
+    &__title::after {
+        position: absolute;
+        content: "";
+        width: 120px;
+        height: 1px;
+        background-color: #fff;
+        bottom: -38px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__slider {}
+    .swiper-watches-first {
+        max-width: 1110px;
+        margin-bottom: 25px;
+    }
+    .swiper-watches-second {
+        max-width: 1110px;
+    }
+    .swiper-slide {
+            &__link {}
+            &__top {
+                padding: 55px 22px;
+                background-color: #191B1C;
+                margin-bottom: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__top-img {}
+            &__bottom {}
+            &__bottom-name {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-bottom: 10px;
+            }
+            &__bottom-price {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+                color: #D0D0D0;
+            }
+    }
+    .card {
+        border: none;
+        background-color: #000;
+    }
+}
+
+

@@ -1,0 +1,48 @@
+.brands {
+    background-color: #0F0F0F;
+    &__inner {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0 72px 0;
+    }
+    &__title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 80px;
+    }
+    &__title::after {
+        position: absolute;
+        content: "";
+        width: 120px;
+        height: 1px;
+        background-color: #fff;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__slider {}
+    .swiper-container {
+        max-width: 1110px;
+    }
+    .swiper-slide {
+            &__inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    }
+    .card {
+        background-color: inherit;
+        border: none;
+    }
+}

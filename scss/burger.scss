@@ -1,0 +1,38 @@
+.burger {
+    display: none;
+    width: 36px;
+    height: 28px;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+    &__line {
+        display: block;
+        background-color:#fff;
+        width: 100%;
+        height: 4px;            
+        position: absolute;
+        left: 0;
+        transition: .3s all linear;
+        &--1{
+            top: 0;
+        }
+        &--2, &--3 {
+            top: 50%;
+            transform: translateY(-50%);                
+        }
+        &--4 {
+            bottom: 0;
+        }
+    }        
+}
+.burger--active {
+    .burger__line--1, .burger__line--4 {
+        opacity: 0;
+    }
+    .burger__line--2 {
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .burger__line--3 {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
