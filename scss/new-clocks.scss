@@ -6,7 +6,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 120px 0 135px;
+        padding: 120px 0 95px;
     }
     &__title {
         font-family: 'Playfair sDisplay';
@@ -50,7 +50,7 @@
             &__top-img {}
             &__bottom {}
             &__bottom-name {
-                font-family: Playfair Display;
+                font-family: 'Playfair Display';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
@@ -59,17 +59,19 @@
                 margin-bottom: 10px;
             }
             &__bottom-price {
-                font-family: Playfair Display;
+                font-family: 'Playfair Display';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 21px;
                 color: #D0D0D0;
+                margin-bottom: 40px;
             }
     }
     .card {
         border: none;
         background-color: #000;
+        margin-top: 0 !important;
     }
 }
 

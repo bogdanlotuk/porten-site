@@ -60,75 +60,65 @@ let mySwiper1 = new Swiper ('.swiper-container.swiper-new-season', {
 
 let mySwiper2 = new Swiper (".swiper-container.swiper-watches-first", {
   loop: true,
-  autoplay: {
-    delay: 3000,
-    pauseOnMouseEnter: true,
-  },
+
   breakpoints: {
     320: {
+      loop: true,
+      allowTouchMove: true,
+      slidesPerColumnFill: 'column',
+      slidesPerColumn: 1,
       slidesPerView: 1,
       spaceBetween: 20
     },
     576: {
+      loop: true,
+      allowTouchMove: true,
+      slidesPerColumnFill: 'column',
+      slidesPerColumn: 1,
       slidesPerView: 2,
       spaceBetween: 20
     },
     768: {
+      loop: true,
+      allowTouchMove: true,
+      slidesPerColumnFill: 'column',
+      slidesPerColumn: 1,
       slidesPerView: 3,
       spaceBetween: 20
     },
     992: {
+      loop: true,
+      allowTouchMove: true,
+      slidesPerColumnFill: 'column',
+      slidesPerColumn: 1,
       slidesPerView: 3,
-      spaceBetween: 50
+      spaceBetween: 50,
+    },
+    1200: {
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2,
+      allowTouchMove: false,
+      slidesPerView: 4,
+      spaceBetween: 30
     },
     1400: {
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2,
+      allowTouchMove: false,
       slidesPerView: 4,
       spaceBetween: 30
     }
   }
 })
 
-let mySwiper3 = new Swiper (".swiper-container.swiper-watches-second", {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    pauseOnMouseEnter: true,
-    reverseDirection: true,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 50
-    },
-    1400: {
-      slidesPerView: 4,
-      spaceBetween: 30
-    }
-  }
-})
 
 let mySwiper4 = new Swiper (".swiper-container.swiper-brands", {
   loop: true,
-  autoplay: {
-    delay: 3000,
-    pauseOnMouseEnter: true,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
+      allowTouchMove: true,
     },
     576: {
       slidesPerView: 2,
@@ -140,11 +130,18 @@ let mySwiper4 = new Swiper (".swiper-container.swiper-brands", {
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 30,
+      allowTouchMove: true,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      allowTouchMove: false,
     },
     1400: {
       slidesPerView: 4,
-      spaceBetween: 30
+      spaceBetween: 30,
+      allowTouchMove: false,
     }
   },
 })

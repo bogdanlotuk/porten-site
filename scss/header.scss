@@ -43,7 +43,7 @@
         padding: 13px 0;
     }
     &__top-link {
-        font-family: Post No Bills Jaffna;
+        font-family: 'Post No Bills Jaffna';
         text-transform: uppercase;
         font-style: normal;
         font-weight: bold;
@@ -70,8 +70,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        background: url('../img/header__bg.jpg') no-repeat;
-        background-size: cover;
+        background: center / cover no-repeat url('../img/header__bg.jpg');
     }
     &__center-symbol {
         width: 320px;
@@ -84,7 +83,7 @@
         margin: 160px 0 80px;
     }
     &__center-name {
-        font-family: Post No Bills Jaffna;
+        font-family: 'Post No Bills Jaffna';
         text-transform: uppercase;
         font-weight: 700;
         font-size: 64px;
@@ -93,7 +92,7 @@
         margin-bottom: 0;
     }
     &__center-city {
-        font-family: PT Sans;
+        font-family: 'PT Sans';
         font-weight: 400;
         font-size: 22px;
         line-height: 28px;
@@ -102,7 +101,7 @@
     }
     &__center-text {
         max-width: 750px;
-        font-family: PT Sans;
+        font-family: 'PT Sans';
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -110,9 +109,6 @@
         text-transform: uppercase;
         margin-bottom: 154px;
     }
-}
-.fixed-left {
-    &__time {}
 }
 .list-time {
     display: flex;
@@ -158,7 +154,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: PT Sans;
+        font-family: 'PT Sans';
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
